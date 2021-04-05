@@ -1,9 +1,9 @@
 # Self―Training
-:octocat: training-
+:octocat: training-responsive_navbar
 
 ## Description
-Build with vanilla HTML, CSS and JavaScript.  
-How does it look? Take a look at []()
+Responsive navbar built with vanilla HTML, CSS and JavaScript.  
+How does it look? Take a look at [Responsive Navbar](https://javierandresgp.github.io/training-responsive_navbar/)
 
 ## Stack
 * HTML
