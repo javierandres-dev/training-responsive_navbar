@@ -1,3 +1,176 @@
+/* CUSTOM PROPERTIES
+  ============================= */
+:root {
+  --white: #ffffff;
+  --blue: #49a6ea;
+  --soft: #f1f5f8;
+  --middle: #929ea9;
+  --dark: #222222;
+}
+/* BASE
+  ============================= */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+a {
+  color: red;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  font-style: italic;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  font-style: italic;
+  text-decoration: underline;
+}
+/* CLASSES
+  ============================= */
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+.brand {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-shadow: 0px 2px 4px var(--middle);
+}
+.brand a {
+  color: var(--dark);
+  padding: 1rem;
+}
+.brand a:hover {
+  color: var(--middle);
+}
+.brand span {
+  color: var(--blue);
+}
+.btnShow {
+  list-style: none;
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.btnShow:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+.btnShow li {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: var(--blue);
+  border-radius: 2rem;
+}
+.btnShow li:nth-child(2) {
+  margin: 0.4rem 0;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.navbar a {
+  color: var(--dark);
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.navbar a:hover {
+  background-color: var(--soft);
+  border-radius: 0.5rem;
+}
+.social {
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social a {
+  color: var(--blue);
+  padding: 1rem;
+}
+.social a:hover {
+  color: var(--middle);
+}
+.main {
+  height: 100vh;
+  background-color: var(--soft);
+}
+.show {
+  display: none;
+}
+/* MEDIA QUERIES
+  ============================= */
+@media screen and (min-width: 576px) {
+  .navbar a:hover {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .brand {
+    font-size: 1.9rem;
+  }
+  .navbar a:hover {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .brand {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .btnShow {
+    display: none;
+  }
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar,
+  .social {
+    width: auto;
+  }
+  .navbar a,
+  .social a {
+    margin: 1rem;
+  }
+  .navbar a:hover {
+    width: 100%;
+    background-color: transparent;
+  }
+  .show {
+    display: unset;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .brand {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .brand {
+    font-size: 2.2rem;
+  }
+}
 /* DEVELOPER
   ============================= */
 .dev {
